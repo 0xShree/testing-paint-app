@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Rectangle Paint App</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="initialize.js"></script>
+        <script src="main.js"></script>
+        <script src="mouseEvents.js"></script>
+        <script src="draw.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <a href="#" ><img src="rectangle.jpg" onclick="drawingEvent()" alt="Draw Rectangle"></a>
+                <a href="#" title="Select"><img src="move.jpg" onclick="movingEvent()" alt="Select"></a>
+            </div>
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <div>
+                <button onclick="downloadCanvas()">Download Image</button>
+                <button onclick="clearCanvas()">Clear</button>
+            </div>
+        </div>
+    </body>
+</html>
